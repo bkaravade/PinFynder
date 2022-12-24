@@ -1,0 +1,37 @@
+<meta name="description" content="Indian Postal PIN Code Search, Post Office Details, Indian Postal Stamps, All India Post Office Data" />
+
+<meta name="robots" content="index, follow" />
+
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+<link rel="canonical" href="http://pinfynder.ml/" />
+
+<meta property="og:locale" content="en_US" />
+
+<meta property="og:type" content="website" />
+
+<meta property="og:title" content="PinFynder | Indian Pincode Fynder App - Ballal Karavade" />
+
+<meta property="og:description" content="Indian Postal PIN Code Search, Post Office Details, Indian Postal Stamps, All India Post Office Data" />
+
+<meta name="keywords" content="pin code, pincode, post office, india, indian post, india post, postal code, zip code, indian postla pin code, postal stamp" />
+
+<meta property="og:url" content="http://pinfynder.ml/" />
+
+<meta property="og:site_name" content="PinFynder" />
+
+<meta property="og:site_name" content="https://www.facebook.com/ballal.karavade/" />
+
+<meta property="article:publisher" content="https://www.facebook.com/ballal.karavade/" />
+
+<meta property="article:author" content="hhttps://www.facebook.com/ballal.karavade/" />
+
+<meta property="article:modified_time" content="2021-09-13T17:59:06+00:00" />
+
+<meta property="og:image" content="http://pinfynder.ml/static/images/img2.png" />
+
+<meta property="og:image:width" content="1025" />
+
+<meta property="og:image:height" content="637" />

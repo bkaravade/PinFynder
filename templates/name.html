@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+ 
+
+
+  <section class="contact_section layout_padding">
+    <div class="container ">
+      <div class="heading_container">
+        <h2>
+          Search By Post Office Name
+        </h2>
+        <!-- <img src="images/plug.png" alt=""> -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form action="/getPin" method="POST">
+            <div>
+              <input type="text" placeholder="Post Office Name" name = 'name' required/>
+            </div>
+              {% if name1 %}
+                <p style="color: red;">{{name1}}</p>
+              {% endif %}
+              <button class = "col-12">
+                Submit
+              </button>
+              <br><br>
+                <input type="reset"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <div class="container">
+    <div class="row">
+      {% if name|length > 1 %}
+          {% for i in name %}                                 
+            <div class="col-sm-4" style = "padding-bottom: 20px;">
+              <div class="card">
+                <div class="card-body">
+                  <b><h5 class="card-title text-center">{{i['Place / City / Area']}}</h5></b><br>
+                  <h6 class="card-subtitle mb-2 text-muted">PinCode:  {{i['Pincode']}}</h6>
+                  <p class="card-text">Delivery Type:  {{i['Delivery Type']}}</p>
+                  <p class="card-text">Place:  {{i['County / Province']}}</p>
+                  <p class="card-text">State:  {{i['State']}}</p>
+                </div>
+              </div>
+            </div>
+            <br><br>
+          {% endfor %}
+        {% endif %}
+        {% if name|length ==  1 %}
+            {% for i in name %}   
+            <div class="col-sm-4" style = "padding-bottom: 20px;">
+              <div class="card">
+                <div class="card-body">
+                  <b><h5 class="card-title text-center">{{i['Message']}}</h5></b><br>
+                  <h6 class="card-subtitle mb-2 text-muted">{{i['Error']}}</h6>
+                  <p class="card-text">{{i['Hint']}}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% endif %}
+    </div>
+  </div>
+<br><br><br>
+
+
+    {% endblock %}

@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+{% block body %}
+   
+  </div>
+
+
+
+  <!-- about section -->
+  <section class="about_section layout_padding" id="about-pin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Pincode
+              </h2>
+              <!-- <img src="images/plug.png" alt=""> -->
+            </div>
+            <p>
+              Postal Index Number(PIN) or PIN Code is the numbering of the post office or post code system used by India Post. The PIN Code is 6 digits long. First two digit reflects state, next the district and last three represent the post office code. <br>
+              <br>
+              Pincode system was introduced in India on 15 August in the year 1972. India Post is one of the largest postal system owned by Government of India. It has more than 1.5lac post offices across India and reaches every nook and corner of India.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Postal_Index_Number">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img_container">
+            <div class="img-box b1">
+              <img src="{{ url_for('static', filename='images/img2.png') }}" alt="" />
+            </div>
+            <div>
+              <b>
+                <a href="/api/400030">
+                  Try Our Api
+                </a>
+              </b>
+              <p> - For Pincode Try GET <a href="/api/400030"><u>https://pinfynder.ml/api/{PINCODE}</u></a><br>
+                  - For PostOffice Name Try GET <a href="/api/Pune"><u>  https://pinfynder.ml/api/{POSTNAME}</u></a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding" id="contact-id">
+  
+    <div class="container">
+      <div class="row"> 
+        <div class="col-md-6">
+          <div class="heading_container">
+            <h2>
+              Contact
+            </h2>
+          </div>
+          <form action="/send-mail" method = "post">
+            <div>
+              <input type="text" placeholder="Name" name="name" required/>
+            </div>
+            <div>
+              <input type="email" placeholder="Email" name = "mail" required/>
+            </div>
+            <div>
+              <input type="text" placeholder="Phone Number" name="pno" required/>
+            </div>
+            <div>
+              <input type="text" class="message-box" name = "msg" placeholder="Message" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+          {% if name%}
+            <h6 style="color: green;"><b>{{name}}</b></h6>
+          {% endif %}
+          {% if name1%}
+            <h6 style="color: red;"><b>{{name1}}</b></h6>
+          {% endif %}
+        </div>
+        <div class="col-md-6">
+          <div class="heading_container">
+            <h2>
+              Disclaimer
+            </h2>
+          </div>
+          <div>
+            <p>
+              &emsp;&emsp;This website has no affiliation with Government of INDIA or Indian Post by any way. The PIN Codes and related information may not be accurate. The use of the information provide here is at the sole risk of the user, the owner will be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content or services available on or through this site.
+              <br>&emsp;&emsp;This website does not share personal information with third parties nor do we store any information about your visit to this site other than to analyze and optimize our content and your reading experience through the use of cookies. You can turn off the use of cookies at anytime by changing your specific browser settings.
+              <br>&emsp;<b><u></u>This Website is for Educational Purpose Only.</u></b>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  {% endblock %}
+
+  
