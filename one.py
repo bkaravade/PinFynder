@@ -11,8 +11,8 @@ mail = Mail(app) # Mail Init
 # Mail Config
 app.config['MAIL_SERVER']='mail.spellsys.tech'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'demo@spellsys.tech'
-app.config['MAIL_PASSWORD'] = 'DemoMail@12'
+app.config['MAIL_USERNAME'] = 'Mail Here'
+app.config['MAIL_PASSWORD'] = 'Password'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
