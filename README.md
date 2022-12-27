@@ -8,3 +8,5 @@ Try GET / POST https://pinfynder.ml/api/400030      {PINCODE}  => <int: pincode>
 Try GET/ POST https://pinfynder.ml/api/Pune         {POSTOFFICENAME}   => <string: postname>.
 
 Technology Used: Python (Flask), Requires Basic Data Mining and Data Engineering Concepts.
+Deployment: Private Server.
+            
